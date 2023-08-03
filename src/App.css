@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.invisible{
+  display: none;
+}
+
+h1{
+  color: black;
+  -webkit-text-stroke: 2px white; /* width and color */
+}
+canvas, .player, .example{
+  width: 940px;
+  height: 650px;
+}
+
+canvas{
+  /* background-color: red; */
+  position: absolute;
+}
+
+
+.player{
+  justify-content: center;
+  border-radius: 20px;
+}
+
+canvas.photo{
+  display: none;
+}
+
+.wedcam-video{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.buttons{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  background-color: beige;
+  border-radius: 20px;
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 991px) {
+  canvas, .player, .example{
+    width:705px;
+    height:487.5px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 769px){
+  canvas, .player, .example{
+    width:470px;
+    height:325px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  canvas, .player, .example{
+    width:313.33333px;
+    height:216.66667px;
   }
 }

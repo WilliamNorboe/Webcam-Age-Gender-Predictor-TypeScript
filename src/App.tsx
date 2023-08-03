@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import Face from "./face";
+
+import Camera from "./camera";
 
 function App() {
+  const [photoTaken, setPhotoTaken] = useState<any>(false);
+
+  const takeNewPhoto = () => {
+    window.location.reload();
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Webcam Age/Gender Predictor by William Norboe</h1>
+      <Camera setState={setPhotoTaken} />
+      <div>
+        {photoTaken ? (
+          <div>
+            <button onClick={takeNewPhoto}>Take New Photo</button>
+            <Face img={photoTaken} />
+          </div>
+        ) : (
+          <></>
+        )}
+      </div>
+      <div className="example invisible"></div>
     </div>
   );
 }
