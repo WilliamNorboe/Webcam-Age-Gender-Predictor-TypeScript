@@ -71,10 +71,14 @@ button{
   }
 }
 
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 705px){
   canvas, .player, .example{
-    width:470px;
-    height:325px;
+    height:470px;
+    width:325px;
+  }
+
+  .webcam-video{
+    flex-direction: column-reverse;
   }
 }
 
