@@ -72,10 +72,6 @@ button{
 }
 
 @media only screen and (max-width: 705px){
-  canvas, .player, .example{
-    height:470px;
-    width:325px;
-  }
 
   .webcam-video{
     flex-direction: column-reverse;
