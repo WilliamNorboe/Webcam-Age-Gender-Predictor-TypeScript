@@ -59,6 +59,11 @@ button{
   font-size: 24px;
 }
 
+.webcam-video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media only screen and (max-width: 991px) {
   canvas, .player, .example{
     width:705px;
@@ -75,7 +80,11 @@ button{
 
 @media only screen and (max-width: 500px) {
   canvas, .player, .example{
-    width:313.33333px;
-    height:216.66667px;
+    height:313.33333px;
+    width:216.66667px;
+  }
+
+  .webcam-video{
+    flex-direction: column-reverse;
   }
 }
