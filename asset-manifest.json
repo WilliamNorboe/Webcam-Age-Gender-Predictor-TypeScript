@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.76a66c8b.css",
-    "main.js": "/static/js/main.b44c3be5.js",
-    "index.html": "/index.html",
-    "main.76a66c8b.css.map": "/static/css/main.76a66c8b.css.map",
-    "main.b44c3be5.js.map": "/static/js/main.b44c3be5.js.map"
+    "main.css": "/Webcam-Age-Gender-Predictor-TypeScript/static/css/main.76a66c8b.css",
+    "main.js": "/Webcam-Age-Gender-Predictor-TypeScript/static/js/main.b44c3be5.js",
+    "index.html": "/Webcam-Age-Gender-Predictor-TypeScript/index.html",
+    "main.76a66c8b.css.map": "/Webcam-Age-Gender-Predictor-TypeScript/static/css/main.76a66c8b.css.map",
+    "main.b44c3be5.js.map": "/Webcam-Age-Gender-Predictor-TypeScript/static/js/main.b44c3be5.js.map"
   },
   "entrypoints": [
     "static/css/main.76a66c8b.css",
