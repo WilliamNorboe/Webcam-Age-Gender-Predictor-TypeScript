@@ -5,11 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-background: repeating-linear-gradient( 45deg, red, pink 5px, #e5e5f7 5px, #e5e5f7 25px ) no-repeat center center fixed;
-z-index: 0;
+  z-index: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, #ff6b6b, #f7d94c, #6bff6b, #6bbfff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
